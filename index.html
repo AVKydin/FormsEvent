@@ -24,11 +24,24 @@
 	<hr>
 
 	<form action="" name="f2">
-		<input type="radio" name="rad" value="red">
-		<input type="radio" name="rad" value="green">
-		<input type="radio" name="rad" value="blue">
-		<input type="radio" name="rad" value="yellow">
-		<input type="radio" name="rad" value="white">
+
+		<!-- <input type="radio" name="rad" value="red" id="red">
+		<label for="red">red</label> -->
+		<input onclick="radioColor()" type="radio" name="rad" value="green">green
+		<input onclick="radioColor()" type="radio" name="rad" value="blue">blue
+		<input onclick="radioColor()" type="radio" name="rad" value="yellow">yellow
+		<input onclick="radioColor()" type="radio" name="rad" value="red">red
+		<input onclick="radioColor()" type="radio" name="rad" value="white" checked>white
+	</form>
+
+	<hr>
+
+	<form action="" name="f3" onclick="radioColor()">
+		<input type="radio" name="rad3" value="green">green
+		<input type="radio" name="rad3" value="blue">blue
+		<input type="radio" name="rad3" value="yellow">yellow
+		<input type="radio" name="rad3" value="red">red
+		<input type="radio" name="rad3" value="white" checked>white
 	</form>
 
 	<script src="./script.js"></script>
