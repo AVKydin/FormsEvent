@@ -65,5 +65,6 @@ f4.show.addEventListener('click', function () {
     
   // }
   f4.area.style.display = f4.show.checked ? 'block' : 'none';
+  console.log(f4.area.style.display);
 
 })
