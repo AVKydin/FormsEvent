@@ -128,3 +128,7 @@ f6.test.addEventListener("input", function () {
   document.querySelector('.text').textContent = this.value;
 });
 
+function showMassage() {
+  event.preventDefault()
+  alert('submit')
+}
