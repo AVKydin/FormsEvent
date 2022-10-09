@@ -34,8 +34,8 @@
 //   f1.reset()
 // })
 
-let f2 = document.forms.f2;
-console.log(f2)
+// let f2 = document.forms.f2;
+// console.log(f2)
 
 // for (let i = 0; i < f2.elements.length; i += 1){
 //   f2.elements[i].onclick = function () {
@@ -44,8 +44,26 @@ console.log(f2)
 //   }
 // }
 
-function radioColor() {
-  if (event.target.type === 'radio') {
-    document.body.style.backgroundColor = event.target.value;
-  }
-}
+// function radioColor() {
+//   if (event.target.type === 'radio') {
+//     document.body.style.backgroundColor = event.target.value;
+//   }
+// }
+
+
+let f4 = document.forms.f4;
+
+f4.show.addEventListener('click', function () {
+  // console.log(this);
+  // console.log(event.target.checked);
+  // f4.hide.checked = true;
+  // this.checked = false;
+  // if (f4.show.checked) {
+  //   f4.area.style.display = 'block'
+  // } else {
+  //   f4.area.style.display = "none";
+    
+  // }
+  f4.area.style.display = f4.show.checked ? 'block' : 'none';
+
+})
